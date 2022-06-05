@@ -1,6 +1,7 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
+  pathPrefix: "/its-me",
   siteMetadata: {
     sideNav: [
       { name: "It's me", path: "/" },
