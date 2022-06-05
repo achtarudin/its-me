@@ -62,7 +62,7 @@ function skills({ children, skills = [] }: Props) {
         w={
           dimensions && dimensionChildren
             ? dimensions.borderBox.width - dimensionChildren.margin.right * 2
-            : "full"
+            : "80%"
         }
         bg="pink.100"
         rounded="lg"
