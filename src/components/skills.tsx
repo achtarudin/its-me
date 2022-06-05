@@ -1,4 +1,3 @@
-
 import { ceil, chunk } from "lodash";
 import { IconType } from "react-icons";
 import * as Icons from "react-icons/si";
@@ -13,7 +12,6 @@ import {
   Icon,
   useDimensions
 } from "@chakra-ui/react";
-
 
 type Props = {
   children?: React.ReactNode;
@@ -46,9 +44,9 @@ function skills({ children, skills = [] }: Props) {
       h={
         dimensions && dimensionChildren
           ? dimensionChildren.borderBox.height - 100
-          : 0
+          : 100
       }
-      bg="pink.500"
+      bg={{ base: "transparent", md: "pink.500" }}
       position="relative"
       w="auto"
       my={5}
@@ -64,7 +62,7 @@ function skills({ children, skills = [] }: Props) {
         w={
           dimensions && dimensionChildren
             ? dimensions.borderBox.width - dimensionChildren.margin.right * 2
-            : 0
+            : "full"
         }
         bg="pink.100"
         rounded="lg"
@@ -78,7 +76,7 @@ function skills({ children, skills = [] }: Props) {
             {pageTitle}
           </Text>
 
-          <Box mt={4} p={4} mx={{ base: 5, md: 20 }}>
+          <Box mt={4} p={4} mx={{ base: 4, md: 20 }}>
             <Flex
               justifyContent="space-between"
               direction={{ base: "column", md: "row" }}
