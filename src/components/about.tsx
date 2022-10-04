@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import { Box, Flex, Text, Image, Button } from "@chakra-ui/react";
+import Resume from "../images/aip-achtarudin.pdf";
 
 type Props = {
   children?: React.ReactNode;
@@ -76,12 +77,17 @@ function about({ children, about, me, resumeLink, photoProfile }: Props) {
             >
               {itsMe[2] ?? ""}
             </Text>
-            <Text mt={2} fontSize="16px">{about}</Text>
+            <Text mt={2} fontSize="16px">
+              {about}
+            </Text>
             <Button
               colorScheme="pink"
               rounded="none"
               mt={2}
               onClick={downloadResume}
+              as="a"
+              href={Resume}
+              target="_blank"
             >
               Download Resume
             </Button>

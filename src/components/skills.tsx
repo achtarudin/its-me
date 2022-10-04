@@ -10,6 +10,7 @@ import {
   Text,
   Progress,
   Icon,
+  Tooltip,
   useDimensions
 } from "@chakra-ui/react";
 
@@ -86,13 +87,21 @@ function skills({ children, skills = [] }: Props) {
                 <Box w="full" mr={index == 0 ? 8 : 0} key={`box-${index}`}>
                   {skillChuck.map((skill: any, indexSkill: number) => (
                     <Flex w="100%" mb={4} key={`skill-${indexSkill}`}>
-                      <Icon
-                        alignSelf="center"
-                        as={skill.icon}
-                        h={{ base: 6, md: 8 }}
-                        w={{ base: 6, md: 8 }}
-                        color={skill.iconColor}
-                      />
+                      <Tooltip
+                        label={`${skill.name} ${skill.value}%`}
+                        aria-label="A tooltip"
+                      >
+                        <span>
+                          <Icon
+                            alignSelf="center"
+                            as={skill.icon}
+                            h={{ base: 6, md: 8 }}
+                            w={{ base: 6, md: 8 }}
+                            color={skill.iconColor}
+                          />
+                        </span>
+                      </Tooltip>
+
                       <Progress
                         alignSelf="center"
                         flex={1}

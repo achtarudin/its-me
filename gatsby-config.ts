@@ -11,9 +11,9 @@ const config: GatsbyConfig = {
     aboutMe: {
       githubLink: "https://github.com/achtarudin",
       photoProfile: "https://avatars.githubusercontent.com/u/24327891?v=4",
-      me: `Hi, I am - Achtarudin, - a brogrammer`,
+      me: `Hi, I am - Achtarudin, - a Fullstack Web Programmer`,
       about:
-        "I have more than 3 years of experience in programming, I enjoy overcoming challenges, eager to learn, for now I am interesting about mobile programing like flutter, Let's see my portofolio. ",
+        "I am a qualified and professional web programmer with three years of experience as full stack programmer. Strong creative and analytical skills. Team player with an eye for detail. ",
       resumeLink: "https://github.com/achtarudin",
       skills: [
         {
@@ -24,6 +24,20 @@ const config: GatsbyConfig = {
           progressColor: "red"
         },
         {
+          name: "Mysql",
+          icon: "SiMysql",
+          value: "70",
+          iconColor: "blue.500",
+          progressColor: "blue"
+        },
+        {
+          name: "Vue Js",
+          icon: "SiVuedotjs",
+          value: "77",
+          iconColor: "green.500",
+          progressColor: "green"
+        },
+        {
           name: "Javascript",
           icon: "SiJavascript",
           value: "80",
@@ -31,25 +45,25 @@ const config: GatsbyConfig = {
           progressColor: "yellow"
         },
         {
-          name: "Flutter",
-          icon: "SiFlutter",
-          value: "65",
+          name: "Tailwind CSS",
+          icon: "SiTailwindcss",
+          value: "70",
           iconColor: "blue.500",
           progressColor: "blue"
         },
         {
-          name: "Mysql",
-          icon: "SiMysql",
-          value: "65",
-          iconColor: "black",
-          progressColor: "blackAlpha"
+          name: "Rest API",
+          icon: "SiPostman",
+          value: "80",
+          iconColor: "orange.500",
+          progressColor: "orange"
         }
       ],
       experiences: [
         {
           companyName: "Izzo Cipta Indonesia",
-          date: "(Juni 2019  -  Present)",
-          position: "Fullstack Developer",
+          date: "(Maret 2020 - September 2022)",
+          position: "Fullstack Web Programmer",
           jobDetail: [
             "Manage User Registration, Login, and Logout",
             "Create UI and UX project using templates",
@@ -59,7 +73,9 @@ const config: GatsbyConfig = {
             "Project Klinik",
             "Project Babycare",
             "Project Inventory",
-            "Developing web application using Laravel, VueJS, Mysql, and other plugins"
+            "Developing web application using Laravel, VueJS, Mysql, and other Javascript plugins",
+            "Developing Rest API using Laravel and Mysql For Mobile Apps",
+            "Customize UI using Tailwind CSS"
           ]
         },
         {
@@ -70,7 +86,7 @@ const config: GatsbyConfig = {
             "Testing of web application using PHPUnit",
             "Create documentation using Spreadsheet",
             "Project Work Order",
-            "Developing web application using Laravel, Jquey, Postgrees, and other plugins"
+            "Developing web application using Laravel, Jquery, Postgrees, and other Javascript  plugins"
           ]
         }
       ]
